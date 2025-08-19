@@ -1,0 +1,139 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+body {
+  background-color: #1b1b2f;
+  color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+
+h1 {
+  margin-bottom: 20px;
+  color: #e94560;
+  text-shadow: 1px 1px 4px #000;
+}
+
+
+.search-container {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #162447;
+  padding: 15px 20px;
+  border-radius: 0 0 12px 12px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  z-index: 1000;
+}
+
+
+#searchInput {
+  padding: 12px 15px;
+  width: 250px;
+  border-radius: 30px;
+  border: 2px solid #e94560;
+  outline: none;
+  font-size: 16px;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+#searchInput:focus {
+  border-color: #ff597b;
+  box-shadow: 0 0 8px rgba(233, 69, 96, 0.5);
+}
+
+
+#btnSearch {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  background-color: #e94560;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+#btnSearch:hover {
+  background-color: #ff597b;
+  transform: translateY(-2px);
+}
+
+
+body {
+  padding-top: 80px; 
+}
+
+#content ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+  list-style: none;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 1000px;
+  padding: 0;
+}
+
+#content li {
+  background-color: #162447;
+  padding: 10px;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#content li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+#content a {
+  text-decoration: none;
+  color: #f5f5f5;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+#content img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+/* Paginação */
+#pagination {
+  margin-top: 25px;
+  display: flex;
+  gap: 10px;
+}
+
+#pagination button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #e94560;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#pagination button:hover {
+  background-color: #d63450;
+}

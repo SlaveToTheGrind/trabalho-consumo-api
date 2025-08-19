@@ -1,0 +1,89 @@
+#detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #1b1b2f;
+  color: #f5f5f5;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.card-detail {
+  background-color: #162447;
+  border-radius: 16px;
+  padding: 25px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-detail:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.6);
+}
+
+
+.card-detail h2 {
+  margin-bottom: 15px;
+  color: #e94560;
+  text-shadow: 1px 1px 4px #000;
+}
+
+
+.character-image {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  transition: transform 0.3s;
+}
+
+.character-image:hover {
+  transform: scale(1.05);
+}
+
+
+.card-detail p {
+  margin: 6px 0;
+  font-size: 16px;
+}
+
+
+.status-alive {
+  color: #4caf50;
+  font-weight: bold;
+}
+
+.status-dead {
+  color: #f44336;
+  font-weight: bold;
+}
+
+.status-unknown {
+  color: #ff9800;
+  font-weight: bold;
+}
+
+
+.back-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  padding: 10px 20px;
+  background-color: #e94560;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 12px;
+  z-index: 1000;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.back-button:hover {
+  background-color: #d63450;
+  transform: translateY(-2px);
+}
